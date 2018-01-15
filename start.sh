@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 CONFIG_LOCK=~/.flexget/.config-lock
-if [[ -f $CONFIG_LOCK ]]; then
+if [ -f $CONFIG_LOCK ]; then
     rm $CONFIG_LOCK
 fi
 flexget $@
